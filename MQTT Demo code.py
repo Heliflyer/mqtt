@@ -3,7 +3,7 @@ import time
 
 def on_message(client, userdata, message):
 	#print("message received", str(message.payload.decode("utf-8")))
-	print("message topic=", message, topic)
+	print("message topic=", message.topic)
 	#print("message retain flag=",message.retain)
 	
 broker="m20.cloudmqtt.com"
